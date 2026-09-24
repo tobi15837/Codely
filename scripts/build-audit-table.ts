@@ -2,6 +2,7 @@ import { neon } from "@neondatabase/serverless";
 
 const sql = neon(process.env.DATABASE_URL!);
 
+
 async function buildAuditTable() {
   console.log(" Allocating database sectors for Audit Logging...");
   
